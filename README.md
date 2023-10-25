@@ -1,27 +1,37 @@
-# React + TypeScript + Vite
+<h2>Book catalog</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[DEMO LINK](https://jocular-sherbet-705d2c.netlify.app/#/signin)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- <img width=20 height=20 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png">&nbsp;&nbsp;&nbsp;React
+- <img width=20 height=20 src="https://cdn.worldvectorlogo.com/logos/redux.svg">&nbsp;&nbsp;&nbsp;Redux Toolkit
+- <img width=20 height=20 src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png">&nbsp;&nbsp;&nbsp; TypeScript
+- <img width=20 height=20 src="https://blogct.creative-tim.com/blog/content/images/wordpress/2021/04/material-tailwind-logo-204x300.png">&nbsp;&nbsp;&nbsp; Material
+Tailwind
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+Here you can:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- Sign in
+<img src="https://img001.prntscr.com/file/img001/rRfi5mo0Qo6pkdDcegrmmQ.png">
+ 
+- Browse the list of users
+- Search by name and select the number of items per page by storing the query parameters in the URL
+<img src="https://img001.prntscr.com/file/img001/5oTSRC7BTKuWtw3IF5FDvA.png">
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Edit information about a chosen user
+<img src="https://img001.prntscr.com/file/img001/UKU2cQHkSz2Nhp6gf8oGNQ.png">
+
+<h3>Try it Yourself</h3>
+
+- clone the forked repo to be running
+- open the project: <code>code ./user-list_react_redux-toolkit</code>
+
+Then open a new terminal and enter:
+
+2.  <code>npm i </code>
+3.  <code>npm run dev</code>
