@@ -1,7 +1,7 @@
 import { Navbar, Typography, Button } from "@material-tailwind/react";
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import { Router } from '../../types/enums';
+import { Router } from "../../types/enums";
 
 export function Header() {
   const navigate = useNavigate();
@@ -16,10 +16,10 @@ export function Header() {
     <Navbar
       variant='gradient'
       color='blue-gray'
-      className='max-w-full from-blue-gray-900 to-blue-gray-600 px-4 py-3 rounded-none mb-20'
+      className='max-w-full from-blue-gray-900 to-blue-gray-600 px-4 py-3 rounded-none mb-10'
     >
       <div className='mx-auto max-w-screen-xl'>
-        <div className='flex flex-wrap items-center justify-between gap-y-4 text-white'>
+        <div className='flex flex-wrap justify-between items-center'>
           <Typography
             as='a'
             href='#'
@@ -46,9 +46,9 @@ export function Header() {
               </g>
             </svg>
           </Typography>
-          <div className='relative flex w-full gap-2 md:w-max'>
+          <div className='relative flex gap-2'>
             {storedValue && (
-              <Button variant='gradient' size='sm' onClick={signOut}>
+              <Button variant='gradient' size='sm' onClick={signOut} className='h-10'>
                 Sign Out
               </Button>
             )}
